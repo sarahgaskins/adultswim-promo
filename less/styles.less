@@ -1,0 +1,139 @@
+#overlay-content {
+    margin-bottom: -330px;
+    .center {
+        text-align: center;
+    }
+    #video {
+        z-index: 10;
+        color: #F00;
+        margin-top: 25px;
+
+        #youtube {
+        	width: 480px;
+        	height: 270px;
+        }
+    }
+    #rating {
+        img {
+            top: 250px;
+            position: relative;
+        }
+    }
+}
+
+#ch {
+    background: white url('../images/ch-bg.jpg') top left no-repeat;
+    height: 100vh;
+    z-index: -5;
+    .promo-content {
+        margin-top: 345px;
+        margin-right: 80px;
+        text-align: center;
+        width: 50%;
+        img {
+            margin: auto auto 10px;
+        }
+        .showtime {
+            color: #0e7195;
+            font-size: 26px;
+            line-height: auto;
+            font-family: "Times New Roman";
+            font-style: italic;
+        }
+        button {
+            background: #5bcaeb;
+            border: 0;
+            height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            a {
+                color: #FFF;
+                font-family: "Times New Roman";
+                font-style: italic;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#ntsf {
+    background: black url('../images/ntsf-bg.jpg') top right no-repeat;
+    height: 100vh;
+    z-index: -10;
+    .promo-content {
+        margin-top: 375px;
+        margin-left: 50px;
+        text-align: center;
+        width: 60%;
+        img {
+            margin: auto auto 10px;
+        }
+        .showtime {
+            color: #FFF;
+            font-size: 23px;
+            font-weight: bold;
+            line-height: auto;
+            text-transform: uppercase;
+        }
+        button {
+            background: #fec52b;
+            border: 0;
+            height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            a {
+                color: #000;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/******* Media Queries ********/
+
+@media (max-width: 767px) {
+    #overlay-content {
+    	margin-bottom: -676px;
+
+    	#video {
+    		margin-top: 400px;
+    		#youtube {
+    			width: 360px;
+    			height: 202px;
+    		}
+    	}
+
+        #rating {
+            img {
+                position: absolute;
+                left: 0;
+                // top: -50px
+            }
+        }
+    }
+    #ch {
+        height: 95vh;
+        .promo-content {
+        	margin-top: 250px;
+        	.showtime {
+        		font-size: 18px;
+        	}
+        }
+    }
+    #ntsf {
+        // height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {
+	#overlay-content {
+		#video {
+			#youtube {
+				width: 280px;
+			}
+		}
+	}
+}
